@@ -1,4 +1,6 @@
 <?php
+
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -32,7 +34,7 @@ if ($taskCount > 0) {
                     <input type="hidden" name="task_id" value="' . $row["task_id"] . '">
                     <button type="submit" class="btn btn-success">Supprimer</button>
                 </form>
-                </div>';
+                </>';
     }
 } else {
     echo "Aucune tâche trouvée.";

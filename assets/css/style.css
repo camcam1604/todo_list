@@ -1,12 +1,13 @@
-a{
-    color: white;
+a {
+  color: white;
 }
-.btn{
-    padding: 10px;
+.btn {
+  padding: 10px;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-.task{
-    justify-content: space-between;
+.task {
+  justify-content: space-between;
 }
+
