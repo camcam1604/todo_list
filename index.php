@@ -13,7 +13,7 @@
     <head>
 
     <body>
-    <!--Header-->
+        <!--Header-->
         <header>
             <nav class="navbar navbar-expand-lg bg-body-light ">
                 <div class="container-fluid">
@@ -25,23 +25,24 @@
             </nav>
         </header>
         <main>
-    <!--Titre et sous-titre-->
+            <!--Titre et sous-titre-->
             <section class="container text-center">
                 <h1>To-Do List</h1>
                 <p>Créer ma propre to-do liste</p>
             </section>
-    <!--Formulaire ajout tâche-->
+            <!--Formulaire ajout tâche-->
             <section class="container text-center justify-content-center align-items-center">
                 <form action="add_task.php" method="post">
-                    <input type="text" name="task" required>
-                    <button type="submit" class="btn btn-success">Ajouter</button>
+                        <label for="add_task" class="form-label">Ajouter une tâche</label>
+                        <input type="text" name="task" placeholder="votre tâche" required>
+                        <button type="submit" class="btn btn-success">Ajouter</button>
                 </form>
 
-    <!--Liste des tâches-->
+                <!--Liste des tâches-->
                 <ul id="task-list">
                     <?php include 'display_tasks.php'; ?>
                 </ul>
-    <!--Bouton supprimer toutes les tâches-->
+                <!--Bouton supprimer toutes les tâches-->
                 <form action="delete_all_tasks.php" method="post">
                     <button type="submit" class="btn btn-success" onclick="return confirm('Êtes-vous sûr de vouloir supprimer toutes les tâches ?')">Supprimer toutes les tâches</button>
                 </form>
